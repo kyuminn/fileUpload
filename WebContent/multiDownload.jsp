@@ -32,6 +32,7 @@
 		<a href="${pageContext.request.contextPath}/multiUpload/${fileName}" download>${fileName}</a> <br>
 		<a href="<c:url value='/multiUpload/${fileName}'/>" download>${fileName }</a><br>
 		<!--  c :url 태그는 자동으로 contextPath 를 붙여준다!! -->
+		<!--  32번째나 33번째 택일해서 사용하기 -->
 	</c:forEach>
 	
 </body>
