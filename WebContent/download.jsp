@@ -16,8 +16,7 @@
 	String savePath = "/upload"; // 저장할 경로 , 최상위는 Webcontent 라 생각하기 (서비스 할 때 경로)	
 	ServletContext context = this.getServletContext();
 	String uploadFilePath=context.getRealPath(savePath); // 서버에서 봤을때 실제 경로가 무엇인지? c:dev/... (RealPath)
-	System.out.println("서버상 실제 경로:"+ uploadFilePath); // 콘솔에 출력
-	
+	System.out.println("서버상 실제 경로:"+ uploadFilePath); // 콘솔에 출력, 톰캣은 서비스할때 이 프로젝트를 다른 경로에 복사해서 저장해둠. 그 경로를 말함. 서버상의 경로!
 	File uploadDir = null ;
 
 	try {

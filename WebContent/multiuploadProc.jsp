@@ -12,9 +12,9 @@
 <body>
 	<%
 	request.setCharacterEncoding("UTF-8");
-	String savePath = "/upload";
+	String savePath = "/multiUpload";
 	ServletContext context = this.getServletContext();
-	String uploadFilePath = context.getRealPath(savePath);
+	String uploadFilePath = context.getRealPath(savePath); // 서버상에 파일이 실제로 업로드되는 경로 
 	int uploadFileSizeLimit = 5 * 1024 * 1024 * 1024;
 	String encType= "UTF-8";
 	
@@ -35,5 +35,7 @@
 		e.printStackTrace();
 	}
 	%>
+	
+	<a href="multiDownload.jsp">다운로드</a>
 </body>
 </html>
